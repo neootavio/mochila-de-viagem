@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com remove</title>
+</head>
+<body>
+    
+    <div id="lista">
+        <p id="p1">Paragrafo 1</p>
+        <p id="p2">Paragrafo 2</p>
+        <p id="p3">Paragrafo 3</p>
+        <p id="p4">Paragrafo 4</p>
+        <p id="p5">Paragrafo 5</p>
+        <p id="p6">Paragrafo 6</p>
+        <p id="p7">Paragrafo 7</p>
+        <p id="p8">Paragrafo 8</p>
+    </div>
+
+    <button class="ok">ok</button>
+
+    <script>
+
+        var lista = document.getElementById('lista').childNodes;
+
+        document.getElementById('lista').removeChild(lista[7])
+
+        
+
+        
+
+        var botao = document.querySelector(".ok");
+
+        botao.addEventListener("click", remover);
+
+        function remover(){
+            var elemento = document.getElementById("p5");
+            elemento.remove();
+        }
+
+
+    </script>
+</body>
+</html>
